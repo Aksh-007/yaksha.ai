@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaksha.ai Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="DashboardHome.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Main Container -->
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r border-gray-300">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+        </div>
+        <nav class="mt-6">
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >COI</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Reports</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >3P Implementation</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Other Services</a
+          >
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <!-- Top Bar -->
+        <div
+          class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300"
+        >
+          <div class="flex items-center space-x-4">
+            <!-- Toggle Sidebar Button for Mobile and Desktop -->
+            <button class="text-black md:hidden" onclick="toggleSidebar()">
+              ☰
+            </button>
+          </div>
+          <div class="flex items-center space-x-4">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="border-2 p-2 rounded-md w-64"
+            />
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- Content Area -->
+        <main class="p-6 flex flex-col gap-5">
+          <div class="flex justify-between">
+            <h1 class="text-3xl">Home</h1>
+            <button
+              class="button-custom bg-transparent border border-gray-400 rounded-lg h-10 text-gray-700"
+            >
+              View Tenant Information
+            </button>
+          </div>
+          <!-- Tabs -->
+          <div class="flex border-b border-gray-300 justify-between">
+            <div class="flex">
+              <button
+                class="px-6 py-3 font-medium text-blue-500 border-b-2 border-blue-500"
+              >
+                All Members
+              </button>
+              <button
+                class="px-6 py-3 font-medium text-gray-600 hover:text-blue-500"
+              >
+                Groups
+              </button>
+              <button
+                class="px-6 py-3 font-medium text-gray-600 hover:text-blue-500"
+              >
+                Roles & Templates
+              </button>
+            </div>
+            <button class="px-5 py-1 text-white rounded-md btn-custom">
+              Add New
+            </button>
+          </div>
+
+          <!-- Search and Actions -->
+          <div class="flex justify-between items-center mt-4">
+            <input
+              type="text"
+              placeholder="Search by any related keywords"
+              class="w-1/2 px-4 py-2 border rounded-md"
+            />
+            <div class="flex items-center space-x-2">
+              <button
+                class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300"
+              >
+                Filter
+              </button>
+              <button
+                class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Table -->
+          <div class="overflow-x-auto mt-6">
+            <table class="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="py-3 px-6 text-left">Name</th>
+                  <th class="py-3 px-6 text-left">Member ID</th>
+                  <th class="py-3 px-6 text-left">Group</th>
+                  <th class="py-3 px-6 text-left">Role & Templates</th>
+                  <th class="py-3 px-6 text-left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <td class="py-3 px-6">Sanjay Vyas</td>
+                  <td class="py-3 px-6">#28697824gh5g8</td>
+                  <td class="py-3 px-6">DevOps</td>
+                  <td class="py-3 px-6">DevOps, FULL ACCESS</td>
+                  <td class="py-3 px-6">...</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 px-6">Amit Singh</td>
+                  <td class="py-3 px-6">#28697824gh5g8</td>
+                  <td class="py-3 px-6">TechOps</td>
+                  <td class="py-3 px-6">TechOps, READ, WRITE</td>
+                  <td class="py-3 px-6">...</td>
+                </tr>
+                <!-- Add More Rows as Needed -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex justify-between items-center mt-4">
+            <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300">
+              Previous
+            </button>
+            <div class="flex items-center space-x-1">
+              <button class="px-3 py-1 bg-gray-200 rounded-md">1</button>
+              <button class="px-3 py-1 bg-gray-200 rounded-md">2</button>
+              <button class="px-3 py-1 bg-gray-200 rounded-md">3</button>
+            </div>
+            <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300">
+              Next
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

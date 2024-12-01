@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate COI - Yaksha.ai</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="w-20 bg-white border-r border-gray-300 flex flex-col items-center py-6"
+      >
+        <a href="#" class="mb-6">
+          <img src="https://via.placeholder.com/40" alt="Logo" />
+        </a>
+        <nav class="flex flex-col space-y-6">
+          <a href="#" class="text-gray-500 hover:text-blue-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7h18M3 12h18M3 17h18"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-blue-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.121 19.072a1 1 0 011.414 0l.293.293a1 1 0 010 1.414l-.293.293a1 1 0 01-1.414 0l-.293-.293a1 1 0 010-1.414l.293-.293zM12 9.172l3.536 3.536a1 1 0 01-.707 1.707H5.172a1 1 0 01-.707-1.707L12 9.172zM13.5 12.328L19.708 18.536a1 1 0 010 1.414l-.293.293a1 1 0 01-1.414 0l-6.207-6.208a1 1 0 01-.293-.707V12.5a1 1 0 01.5-.879l.5-.293a1 1 0 011.207.5l.293.5zM6.5 4h11a1 1 0 011 1v1a1 1 0 01-1 1h-11a1 1 0 01-1-1V5a1 1 0 011-1z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <!-- Header -->
+        <header
+          class="flex justify-between items-center px-6 py-4 bg-white border-b border-gray-300"
+        >
+          <h1 class="text-lg font-semibold">Generate New COI</h1>
+          <div class="flex items-center space-x-4">
+            <button class="text-gray-500 hover:text-blue-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7h18M3 12h18M3 17h18"
+                />
+              </svg>
+            </button>
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
+          </div>
+        </header>
+
+        <!-- Main Section -->
+        <main
+          class="flex flex-1 flex-col items-center justify-center text-center"
+        >
+          <div class="bg-gray-100 p-6 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4.354a4 4 0 100 7.292M12 4.354v6.788M12 4.354L9.636 8m2.364-3.646L14.364 8m2.121 6.364A4 4 0 1115 11.636a4.008 4.008 0 011.485 3.182M9 14.121A4.008 4.008 0 0112.121 15m0-7a4.001 4.001 0 000 8"
+              />
+            </svg>
+          </div>
+          <h2 class="text-2xl font-semibold mt-4">
+            Generate a COI using YakshaQ
+          </h2>
+          <div class="mt-6 space-y-4">
+            <button
+              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
+            >
+              Show me all compliance templates
+            </button>
+            <button
+              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
+            >
+              Calculate compliance score for my selected compliance models
+            </button>
+            <button
+              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
+            >
+              Tell me the risk factor involved in SOC compliance for Oct-Dec
+            </button>
+          </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="px-6 py-4 bg-white border-t border-gray-300">
+          <div class="flex items-center space-x-4">
+            <input
+              type="text"
+              placeholder="Message YakshaQ..."
+              class="flex-1 px-4 py-2 border border-gray-300 rounded-md"
+            />
+            <button
+              class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 10h18M3 14h18M3 18h18"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-xs text-gray-400 mt-2">
+            YakshaQ can make mistakes. Check our Terms & Conditions.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

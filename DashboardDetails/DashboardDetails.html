@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-md">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold text-gray-800">Yaksha.ai</h1>
+        </div>
+        <nav class="mt-6">
+          <a
+            href="#"
+            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
+          >
+            <svg
+              class="h-5 w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7h18M3 12h18M3 17h18"
+              />
+            </svg>
+            Home
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
+          >
+            <svg
+              class="h-5 w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 10h18M3 14h18M3 18h18"
+              />
+            </svg>
+            COI
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
+          >
+            <svg
+              class="h-5 w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7h18M3 12h18M3 17h18"
+              />
+            </svg>
+            Services
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
+          >
+            <svg
+              class="h-5 w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7h18M3 12h18M3 17h18"
+              />
+            </svg>
+            Reports
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
+          >
+            <svg
+              class="h-5 w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7h18M3 12h18M3 17h18"
+              />
+            </svg>
+            Other Services
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1">
+        <!-- Header -->
+        <header
+          class="flex items-center justify-between px-6 py-4 bg-white shadow"
+        >
+          <h2 class="text-xl font-semibold text-gray-700">Home</h2>
+          <div class="flex items-center space-x-4">
+            <button class="text-gray-600 hover:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7h18M3 12h18M3 17h18"
+                />
+              </svg>
+            </button>
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
+          </div>
+        </header>
+
+        <!-- Profile Section -->
+        <main class="p-6">
+          <h1 class="text-2xl font-semibold text-gray-800">Sanjay Vyas</h1>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <!-- Basic Details -->
+            <div class="bg-white p-4 shadow rounded-lg">
+              <h2 class="font-semibold text-lg text-gray-700">
+                Basic Details:
+              </h2>
+              <p class="mt-2 text-sm text-gray-600">Name: Sanjay Vyas</p>
+              <p class="mt-2 text-sm text-gray-600">
+                Email: sanjay.v@gmail.com
+              </p>
+              <p class="mt-2 text-sm text-gray-600">
+                Address Line 1: 21 Heaney Forges Suite
+              </p>
+              <p class="mt-2 text-sm text-gray-600">
+                Organisation Name: Nike Inc
+              </p>
+            </div>
+
+            <!-- Groups and Role -->
+            <div class="bg-white p-4 shadow rounded-lg">
+              <h2 class="font-semibold text-lg text-gray-700">
+                Groups associated:
+              </h2>
+              <p class="mt-2 text-sm text-gray-600">
+                <span>DevOps</span>
+                <button class="text-blue-500 underline">Edit</button>
+              </p>
+              <h2 class="font-semibold text-lg text-gray-700 mt-4">Role:</h2>
+              <p class="mt-2 text-sm text-gray-600">
+                <span>DevOps</span>
+                <button class="text-blue-500 underline">Edit</button>
+              </p>
+            </div>
+
+            <!-- Permission Table -->
+            <div class="bg-white p-4 shadow rounded-lg">
+              <div class="flex justify-between items-center">
+                <h2 class="font-semibold text-lg text-gray-700">Permission:</h2>
+                <label class="flex items-center space-x-2">
+                  <input type="checkbox" class="form-checkbox" />
+                  <span>Select All</span>
+                </label>
+              </div>
+              <table class="w-full mt-4 border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">
+                      Action
+                    </th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">
+                      Create
+                    </th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">
+                      Edit
+                    </th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">
+                      Delete
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-2 text-sm text-gray-600">Members</td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 text-sm text-gray-600">Groups</td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 text-sm text-gray-600">Roles</td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
