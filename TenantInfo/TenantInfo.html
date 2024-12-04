@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teananet Info</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="TenantInfo.css" />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <!-- Main Container -->
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r border-gray-300">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+        </div>
+        <nav class="mt-6">
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >COI</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Reports</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >3P Implementation</a
+          >
+          <a
+            href="#"
+            class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black"
+            >Other Services</a
+          >
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col">
+        <!-- Top Bar -->
+        <div
+          class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300"
+        >
+          <div class="flex items-center space-x-4">
+            <!-- Toggle Sidebar Button for Mobile and Desktop -->
+            <button class="text-black md:hidden" onclick="toggleSidebar()">
+              ☰
+            </button>
+          </div>
+          <div class="flex items-center space-x-4">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="border-2 p-2 rounded-md w-64"
+            />
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- Content Area -->
+        <main class="p-6 flex flex-col gap-5 bg-[#f3f3f3] h-screen overflow-auto">
+          <div class="flex justify-between">
+            <h1 class="text-sm">Home</h1>
+          </div>
+          <div class="flex justify-between">
+            <h1 class="text-2xl font-medium">Sanjay Vyas</h1>
+            <button
+              class="px-5 font-medium bg-transparent border border-gray-400 rounded-lg h-10 text-gray-700"
+            >
+              Devops
+            </button>
+          </div>
+          <!-- Main card -->
+          <div class="flex flex-col gap-5">
+            <div class="border-2 rounded-lg px-5 py-3 bg-white">
+              <h1 class="text-lg font-semibold">Basic Details:</h1>
+              <!-- Content Container -->
+              <div class="grid grid-cols-2 gap-y-5 gap-x-6 mt-5 pb-8 text-gray-600">
+                <!-- Name -->
+                <div>
+                  <div class="text-sm">Name</div>
+                  <div class="text-black font-semibold">Sanjay Vyas</div>
+                </div>
+                <!-- Email -->
+                <div>
+                  <div class="text-sm">Email</div>
+                  <div class="text-black font-semibold">sanjay.v@gmail.com</div>
+                </div>
+                <!-- Address -->
+                <div>
+                  <div class="text-sm">Address Line 1</div>
+                  <div class="text-black font-semibold">21 Heaney Forges Suite</div>
+                </div>
+                <!-- Organization -->
+                <div>
+                  <div class="text-sm">Organisation Name</div>
+                  <div class="text-black font-semibold">Nike Inc</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex gap-5">
+              <div class=" custom-height bg-white w-1/2 h-56 rounded-lg p-5 flex flex-col  ">
+                <div class="flex flex-col gap-3">
+                  <p class=" font-semibold">Group Associated:</h1>
+                  <p class="text-3xl ">Devops</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h1 class="font-semibold">Role:</h1>
+                  <p class="text-3xl">Devops</p>
+                </div>
+              </div>
+              <div class="bg-white w-1/2 min-h-56 rounded-lg">
+                <div class=" rounded-lg p-5 bg-white">
+                  <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">Permission:</h2>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                      <span class="text-sm font-medium">Select All</span>
+                      <input type="checkbox" class="toggle-checkbox w-5 h-5" />
+                    </label>
+                  </div>
+                  <!-- Table -->
+                  <div class="overflow-x-auto">
+                    <table class="table-auto w-full border-collapse border border-gray-300">
+                      <thead>
+                        <tr class="bg-gray-100">
+                          <th class="border border-gray-300 px-4 py-2 text-left"> </th>
+                          <th class="border border-gray-300 px-4 py-2 text-center">Create</th>
+                          <th class="border border-gray-300 px-4 py-2 text-center">Edit</th>
+                          <th class="border border-gray-300 px-4 py-2 text-center">Delete</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">Members</td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">Groups</td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">Roles</td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                          <td class="border border-gray-300 px-4 py-2 text-center">
+                            <input type="checkbox" class="w-5 h-5" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

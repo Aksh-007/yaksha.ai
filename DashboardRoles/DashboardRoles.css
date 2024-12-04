@@ -1,0 +1,23 @@
+.input-border {
+    border: 2px solid #ccc;
+  }
+  .button-custom {
+    width: 250px;
+  }
+  .button-custom1 {
+    width: 180px;
+  }
+  .btn-custom {
+    background-color: #6c6c6c;
+    height: 40px;
+  }
+  
+  .btn-custom:hover {
+    background-color: #6c6c6c;
+  }
+  
+  .custom-card {
+    width: 48%;
+    min-height: 270px;
+  }
+  
