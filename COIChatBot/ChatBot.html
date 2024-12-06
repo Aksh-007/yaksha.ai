@@ -8,11 +8,15 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  rel="stylesheet"
+/>
   </head>
   <body class="bg-gray-100 font-sans">
     <div class="flex h-screen">
       <!-- Sidebar -->
-      <aside
+      <!-- <aside
         class="w-20 bg-white border-r border-gray-300 flex flex-col items-center py-6"
       >
         <a href="#" class="mb-6">
@@ -52,77 +56,60 @@
             </svg>
           </a>
         </nav>
+      </aside> -->
+
+      <aside class="w-64 bg-white border-r border-gray-300">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+        </div>
+        <nav class="mt-6">
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Home</a>
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">COI</a>
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Services</a>
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Reports</a>
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">3P Implementation</a>
+          <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Other Services</a>
+        </nav>
       </aside>
 
       <!-- Main Content -->
       <div class="flex-1 flex flex-col">
         <!-- Header -->
-        <header
-          class="flex justify-between items-center px-6 py-4 bg-white border-b border-gray-300"
-        >
-          <h1 class="text-lg font-semibold">Generate New COI</h1>
+        <div class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300">
           <div class="flex items-center space-x-4">
-            <button class="text-gray-500 hover:text-blue-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 7h18M3 12h18M3 17h18"
-                />
-              </svg>
+            <!-- Toggle Sidebar Button for Mobile and Desktop -->
+            <button class="text-black md:hidden" onclick="toggleSidebar()">
+              ☰
             </button>
-            <img
-              src="https://via.placeholder.com/40"
-              alt="User Avatar"
-              class="w-10 h-10 rounded-full"
-            />
           </div>
-        </header>
+          <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search..." class="border-2 p-2 rounded-md w-64" />
+            <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
+          </div>
+        </div>
 
         <!-- Main Section -->
         <main
           class="flex flex-1 flex-col items-center justify-center text-center"
         >
           <div class="bg-gray-100 p-6 rounded-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12 text-gray-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 4.354a4 4 0 100 7.292M12 4.354v6.788M12 4.354L9.636 8m2.364-3.646L14.364 8m2.121 6.364A4 4 0 1115 11.636a4.008 4.008 0 011.485 3.182M9 14.121A4.008 4.008 0 0112.121 15m0-7a4.001 4.001 0 000 8"
-              />
-            </svg>
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
           </div>
           <h2 class="text-2xl font-semibold mt-4">
             Generate a COI using YakshaQ
           </h2>
-          <div class="mt-6 space-y-4">
-            <button
-              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
-            >
+          <div class="mt-6 space-y-4 flex flex-col">
+            <button class="button-custom bg-transparent border border-gray-400 rounded-lg h-10 text-gray-700">
               Show me all compliance templates
             </button>
-            <button
-              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
-            >
+            <button class="button-custom bg-transparent border border-gray-400 rounded-lg h-10 text-gray-700 px-5">
               Calculate compliance score for my selected compliance models
             </button>
-            <button
-              class="w-80 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
-            >
+            <button class="button-custom bg-transparent border border-gray-400 rounded-lg h-10 text-gray-700">  
               Tell me the risk factor involved in SOC compliance for Oct-Dec
             </button>
           </div>
@@ -139,20 +126,7 @@
             <button
               class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 10h18M3 14h18M3 18h18"
-                />
-              </svg>
+            <i class="fa-solid fa-paper-plane"></i>
             </button>
           </div>
           <p class="text-xs text-gray-400 mt-2">

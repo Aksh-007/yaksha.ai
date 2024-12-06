@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="TenanetComapnyInfo.css" />
   </head>
 
@@ -81,7 +85,8 @@
 
         <!-- Content Area -->
         <main class="p-6 flex flex-col gap-5 bg-[#f3f3f3] h-screen overflow-auto">
-          <div class="flex justify-between">
+          <div class="flex items-center">
+            <i class="fa-solid fa-arrow-left px-2"></i>
             <h1 class="text-sm">Home</h1>
           </div>
           <div class="flex justify-between">
@@ -102,20 +107,7 @@
                       />
                       <!-- Edit Icon Circle -->
                       <div class="absolute bottom-0 right-0 bg-white w-8 h-8 rounded-full flex items-center justify-center border-2 border-gray-300 ">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-4 h-4 text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M11 17l-4 4m0 0l4-4m-4 4H4m12-4v-2a4 4 0 00-4-4H6a4 4 0 000 8v2m0 0h6a4 4 0 004-4v-2a4 4 0 00-4-4H6a4 4 0 000 8v2m0 0h6a4 4 0 004-4v-2a4 4 0 00-4-4z"
-                          />
-                        </svg>
+                        <i class="fa-solid fa-user-pen text-sm"></i>
                       </div>
                     </div>
                     <div class="flex flex-col justify-center gap-2">
@@ -130,16 +122,16 @@
                     </h1>
                     <div class="flex gap-5 mt-10">
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-lg font-semibold">Product</h3>
+                            <h3 class="text-lg font-semibold text-gray-600">Product</h3>
                             <p>Footwear and appareal corporation</p>
                         </div>
                         <div class="flex flex-col gap-4 ml-52">
-                            <h3>Subscription</h3>
+                            <h3  class="text-lg font-semibold text-gray-600">Subscription</h3>
                             <div class="flex gap-5">
-                              <button class="p-2 bg-[#f3f3f3]">
+                              <button class="p-2 btn-background rounded-lg px-3">
                                 PCI-DSS
                               </button>
-                              <button>
+                              <button class="p-2 btn-background rounded-lg px-3">
                                 SOC-2
                               </button>
                             </div>
@@ -150,31 +142,42 @@
 
             <!-- Basic Details card -->
             <div class="border-2 rounded-lg px-5 py-3 bg-white">
-              <h1 class="text-lg font-semibold">Basic Details:</h1>
-              <!-- Content Container -->
-              <div class="grid grid-cols-2 gap-y-5 gap-x-6 mt-5 pb-8 text-gray-600">
-                <!-- Name -->
-                <div>
-                  <div class="text-sm">Name</div>
-                  <div class="text-black font-semibold">Sanjay Vyas</div>
-                </div>
-                <!-- Email -->
-                <div>
-                  <div class="text-sm">Email</div>
-                  <div class="text-black font-semibold">sanjay.v@gmail.com</div>
-                </div>
-                <!-- Address -->
-                <div>
-                  <div class="text-sm">Address Line 1</div>
-                  <div class="text-black font-semibold">21 Heaney Forges Suite</div>
-                </div>
-                <!-- Organization -->
-                <div>
-                  <div class="text-sm">Organisation Name</div>
-                  <div class="text-black font-semibold">Nike Inc</div>
+                <h1 class="text-lg font-semibold">Basic Details:</h1>
+                <!-- Content Container -->
+                <div class="grid grid-cols-3 gap-y-5 gap-x-6 mt-5 pb-8 text-gray-600">
+                  <!-- Name -->
+                  <div>
+                    <div class="text-sm font-medium">Name</div>
+                    <div class="text-black font-semibold">Sanjay Vyas</div>
+                  </div>
+                  <!-- Registration Number -->
+                  <div>
+                    <div class="text-sm font-medium">Registration</div>
+                    <div class="text-black font-semibold">12345</div>
+                  </div>
+                  <!-- Email -->
+                  <div>
+                    <div class="text-sm font-medium">Email</div>
+                    <div class="text-black font-semibold">sanjay.v@gmail.com</div>
+                  </div>
+                  <!-- Address Line 1 -->
+                  <div>
+                    <div class="text-sm font-medium">Address Line 1</div>
+                    <div class="text-black font-semibold">21 Heaney Forges Suite</div>
+                  </div>
+                  <!-- Address Line 2 -->
+                  <div>
+                    <div class="text-sm font-medium">Address Line 2</div>
+                    <div class="text-black font-semibold">Apt 5B, Springfield</div>
+                  </div>
+                  <!-- Organization -->
+                  <div>
+                    <div class="text-sm font-medium"> Credit Card Details</div>
+                    <div class="text-black font-semibold">**** **** **** 1234</div>
+                  </div>
                 </div>
               </div>
-            </div>
+              
           </div>
         </main>
       </div>

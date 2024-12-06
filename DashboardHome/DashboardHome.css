@@ -1,4 +1,4 @@
-.button-custom {
+button-custom {
   width: 250px;
 }
 
@@ -9,4 +9,13 @@
 
 .btn-custom:hover {
   background-color: #6c6c6c;
+}
+
+
+#chat-bot{
+  min-height: 80%;
+}
+
+#bot-content{
+  min-height: 80%;
 }
