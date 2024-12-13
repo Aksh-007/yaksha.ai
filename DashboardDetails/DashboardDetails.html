@@ -1,191 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Profile</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-gray-100 font-sans">
-    <div class="flex h-screen">
-      <!-- Sidebar -->
-      <aside class="w-64 bg-white shadow-md">
-        <div class="p-6">
-          <h1 class="text-2xl font-bold text-gray-800">Yaksha.ai</h1>
-        </div>
-        <nav class="mt-6">
-          <a
-            href="#"
-            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
-          >
-            <svg
-              class="h-5 w-5 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 7h18M3 12h18M3 17h18"
-              />
-            </svg>
-            Home
-          </a>
-          <a
-            href="#"
-            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
-          >
-            <svg
-              class="h-5 w-5 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 10h18M3 14h18M3 18h18"
-              />
-            </svg>
-            COI
-          </a>
-          <a
-            href="#"
-            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
-          >
-            <svg
-              class="h-5 w-5 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 7h18M3 12h18M3 17h18"
-              />
-            </svg>
-            Services
-          </a>
-          <a
-            href="#"
-            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
-          >
-            <svg
-              class="h-5 w-5 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 7h18M3 12h18M3 17h18"
-              />
-            </svg>
-            Reports
-          </a>
-          <a
-            href="#"
-            class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-200"
-          >
-            <svg
-              class="h-5 w-5 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 7h18M3 12h18M3 17h18"
-              />
-            </svg>
-            Other Services
-          </a>
-        </nav>
-      </aside>
 
-      <!-- Main Content -->
-      <div class="flex-1">
-        <!-- Header -->
-        <header
-          class="flex items-center justify-between px-6 py-4 bg-white shadow"
-        >
-          <h2 class="text-xl font-semibold text-gray-700">Home</h2>
-          <div class="flex items-center space-x-4">
-            <button class="text-gray-600 hover:text-gray-800">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 7h18M3 12h18M3 17h18"
-                />
-              </svg>
-            </button>
-            <img
-              src="https://via.placeholder.com/40"
-              alt="User Avatar"
-              class="w-10 h-10 rounded-full"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-60 bg-white border-r border-gray-300">
+      <div class="p-6">
+        <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+      </div>
+      <nav class="mt-6">
+        <a href="#"
+          class="block py-3 px-3 bg-gray-100 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-house px-2"></i>
+            <p>Home</p>
           </div>
-        </header>
 
-        <!-- Profile Section -->
-        <main class="p-6">
+        </a>
+        <a href="#"
+          class="block py-3 px-3  hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gauge-high px-2"></i>
+            <p>COI</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gear px-2"></i>
+            <p>Services</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-chart-line px-2"></i>
+            <p>Reports</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-brands fa-unity px-2"></i>
+            <p>3P Implementation</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-circle-plus px-2"></i>
+            <p>Other Services</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+      </nav>
+    </aside>
+    <!-- Main Content -->
+    <div class="flex-1">
+      <!-- Header -->
+      <div class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300">
+        <div class="flex items-center space-x-4">
+          <!-- Toggle Sidebar Button for Mobile and Desktop -->
+          <button class="text-black md:hidden" onclick="toggleSidebar()">
+            ☰
+          </button>
+        </div>
+        <div class="flex items-center space-x-8">
+          <input type="text" placeholder="Search..." class="border-2 p-2 rounded-md w-64 focus:outline-none" />
+          <i class="fa-solid fa-robot text-2xl"></i>
+          <i class="fa-regular fa-bell text-2xl"></i>
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
+        </div>
+      </div>
+
+      <!-- Profile Section -->
+      <main class="p-6">
+        <h3 class="py-2 cursor-pointer"><i class="fa-solid fa-arrow-left-long"></i> Home</h3>
+        <div class="flex justify-between">
           <h1 class="text-2xl font-semibold text-gray-800">Sanjay Vyas</h1>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            <!-- Basic Details -->
-            <div class="bg-white p-4 shadow rounded-lg">
-              <h2 class="font-semibold text-lg text-gray-700">
-                Basic Details:
-              </h2>
-              <p class="mt-2 text-sm text-gray-600">Name: Sanjay Vyas</p>
-              <p class="mt-2 text-sm text-gray-600">
-                Email: sanjay.v@gmail.com
-              </p>
-              <p class="mt-2 text-sm text-gray-600">
-                Address Line 1: 21 Heaney Forges Suite
-              </p>
-              <p class="mt-2 text-sm text-gray-600">
-                Organisation Name: Nike Inc
-              </p>
+          <button class="border-2 border-gray-500 rounded-lg px-3 py-2"><i class="fa-solid fa-pen px-2"></i>Devops</button>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mt-6">
+          <!-- Basic Details (Full Width) -->
+          <div class="bg-white p-4 shadow rounded-lg col-span-1">
+            <h2 class="font-semibold text-lg text-gray-700">Basic Details:</h2>
+            <div class="flex gap-x-72">
+              <div class="">
+                <div class="mt-2 text-lg text-gray-600">Name: <br>
+                  <p class="font-semibold"> Sanjay Vyas</p>
+                </div>
+                <div class="mt-2 text-lg text-gray-600">Email: <br>
+                  <p class="font-semibold">sanjay.v@gmail.com</p>
+                </div>
+              </div>
+              <div class="">
+                <div class="mt-2 text-lg text-gray-600">Address Line 1:<br>
+                  <p class="font-semibold">21 Heaney Forges Suite</p>
+                </div>
+                <div class="mt-2 text-lg text-gray-600">Organisation Name: <br>
+                  <p class="font-semibold">Nike Inc</p>
+                </div>
+              </div>
             </div>
+          </div>
 
+          <!-- Groups and Role, Permission Table (Half Width Each) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Groups and Role -->
             <div class="bg-white p-4 shadow rounded-lg">
-              <h2 class="font-semibold text-lg text-gray-700">
-                Groups associated:
-              </h2>
-              <p class="mt-2 text-sm text-gray-600">
-                <span>DevOps</span>
-                <button class="text-blue-500 underline">Edit</button>
+              <h2 class="font-semibold text-lg text-gray-700">Groups associated:</h2>
+              <p class="mt-2 text-sm text-gray-600 cursor-pointer">
+                <span class="text-lg">DevOps</span>
+                <i class="fa-solid fa-pen px-2"></i>
               </p>
               <h2 class="font-semibold text-lg text-gray-700 mt-4">Role:</h2>
-              <p class="mt-2 text-sm text-gray-600">
-                <span>DevOps</span>
-                <button class="text-blue-500 underline">Edit</button>
+              <p class="mt-2 text-sm text-gray-600 cursor-pointer">
+                <span class="text-lg">DevOps</span>
+                <i class="fa-solid fa-pen px-2"></i>
               </p>
             </div>
 
@@ -193,53 +136,70 @@
             <div class="bg-white p-4 shadow rounded-lg">
               <div class="flex justify-between items-center">
                 <h2 class="font-semibold text-lg text-gray-700">Permission:</h2>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" class="form-checkbox" />
+                <label class="flex items-center space-x-2 cursor-pointer">
+                  <!-- for on -->
+                  <i class="fa-solid fa-toggle-on text-2xl"></i>
+                  <!-- for off use this -->
+                  <!-- <i class="fa-solid fa-toggle-off text-2xl"></i> -->
                   <span>Select All</span>
                 </label>
               </div>
               <table class="w-full mt-4 border border-gray-200">
                 <thead>
                   <tr class="bg-gray-100">
-                    <th class="px-4 py-2 text-left text-sm text-gray-600">
-                      Action
-                    </th>
-                    <th class="px-4 py-2 text-left text-sm text-gray-600">
-                      Create
-                    </th>
-                    <th class="px-4 py-2 text-left text-sm text-gray-600">
-                      Edit
-                    </th>
-                    <th class="px-4 py-2 text-left text-sm text-gray-600">
-                      Delete
-                    </th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">Action</th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">Create</th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">Edit</th>
+                    <th class="px-4 py-2 text-left text-sm text-gray-600">Delete</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="px-4 py-2 text-sm text-gray-600">Members</td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
                   </tr>
                   <tr>
                     <td class="px-4 py-2 text-sm text-gray-600">Groups</td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
                   </tr>
                   <tr>
                     <td class="px-4 py-2 text-sm text-gray-600">Roles</td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
-                    <td class="px-4 py-2"><input type="checkbox" /></td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
+                    <td class="px-4 py-2">
+                      <input type="checkbox" class="transform scale-150" />
+                    </td>
                   </tr>
+
                 </tbody>
               </table>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
