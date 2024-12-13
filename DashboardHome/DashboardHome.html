@@ -14,19 +14,62 @@
   <!-- Main Container -->
   <div class="flex h-screen">
     <!-- Sidebar -->
-    <aside class="w-64 bg-white border-r border-gray-300">
+    <aside class="w-60 bg-white border-r border-gray-300">
       <div class="p-6">
         <h1 class="text-2xl font-bold">Yaksha.ai</h1>
       </div>
       <nav class="mt-6">
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Home</a>
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">COI</a>
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Services</a>
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Reports</a>
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">3P Implementation</a>
-        <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-black">Other Services</a>
+        <a href="#"
+          class="block py-3 px-3 bg-gray-300  text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-house px-2"></i>
+            <p>Home</p>
+          </div>
+
+        </a>
+        <a href="#"
+          class="block py-3 px-3 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gauge-high px-2"></i>
+            <p>COI</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gear px-2"></i>
+            <p>Services</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-chart-line px-2"></i>
+            <p>Reports</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-brands fa-unity px-2"></i>
+            <p>3P Implementation</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-circle-plus px-2"></i>
+            <p>Other Services</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
       </nav>
     </aside>
+
 
     <!-- Main Content -->
     <div class="flex-1 flex flex-col relative">
@@ -38,12 +81,13 @@
             ☰
           </button>
         </div>
-        <div class="flex items-center space-x-4">
-          <input type="text" placeholder="Search..." class="border-2 p-2 rounded-md w-64" />
+        <div class="flex items-center space-x-8">
+          <input type="text" placeholder="Search..." class="border-2 p-2 rounded-md w-64 focus:outline-none" />
+          <i class="fa-solid fa-robot text-2xl"></i>
+          <i class="fa-regular fa-bell text-2xl"></i>
           <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
         </div>
       </div>
-
       <!-- Content Area -->
       <main class="p-6 flex flex-col gap-5 bg-[#f3f3f3]">
         <div class="flex justify-between">
@@ -65,21 +109,23 @@
               Roles & Templates
             </button>
           </div>
-          <button class="px-4 py-1 text-white rounded-md btn-custom">
-            <i class="fa-solid fa-plus px-2"></i>
-            Add New
-          </button>
+          <button
+          class="btn-custom px-4 text-sm text-white rounded-md font-semibold"
+        >
+        <i class="fa-solid fa-plus px-2"></i>
+          Add New
+        </button>
         </div>
 
         <!-- Search and Actions -->
         <div class="flex justify-between items-center mt-4">
           <input type="text" placeholder="Search by any related keywords" class="w-1/3 px-4 py-2 border rounded-md" />
           <div class="flex items-center space-x-2">
-            <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-300 ">
+            <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-300 shadow-md">
               <i class="fa-solid fa-filter"></i>
               Filter
             </button>
-            <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-300">
+            <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-300 shadow-md">
               <i class="fa-solid fa-trash-can"></i>
             </button>
           </div>
@@ -87,10 +133,10 @@
 
         <!-- Table -->
         <div class="overflow-x-auto mt-6">
-          <table class="min-w-full bg-white border border-gray-300">
+          <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-lg">
             <thead>
               <tr class="bg-gray-100">
-                <th class="py-3 px-6 text-left">Name</th>
+                <th class="py-3 px-6 text-left flex gap-2"> <input type="checkbox" class="transform scale-150 cursor-pointer " />Name</th>
                 <th class="py-3 px-6 text-left">Member ID</th>
                 <th class="py-3 px-6 text-left">Group</th>
                 <th class="py-3 px-6 text-left">Role & Templates</th>
@@ -99,18 +145,30 @@
             </thead>
             <tbody>
               <tr class="border-t">
-                <td class="py-3 px-6">Sanjay Vyas</td>
-                <td class="py-3 px-6">#28697824gh5g8</td>
+                <td class="py-3 px-6 flex gap-4 items-center">
+                  <input type="checkbox" class="transform scale-150 cursor-pointer " />
+                  <div class="">
+                  <h1>  Sanjay Vyas</h1>
+                  <p class="text-gray-500">sanjay@gmail.com</p>
+                  </div>
+                </td>
+                <td class="py-3 px-6 "><button class="bg-gray-100 px-4 py-2 rounded-full">#28697824gh5g8</button></td>
                 <td class="py-3 px-6">DevOps</td>
-                <td class="py-3 px-6">DevOps, FULL ACCESS</td>
-                <td class="py-3 px-6"><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="py-3 px-6">DevOps, <br> <p class="text-gray-500">Full Access</p></td>
+                <td class="py-3 px-6"><i class="fa-solid fa-ellipsis-vertical  text-gray-500 cursor-pointer"></i></td>
               </tr>
               <tr class="border-t">
-                <td class="py-3 px-6">Amit Singh</td>
-                <td class="py-3 px-6">#28697824gh5g8</td>
-                <td class="py-3 px-6">TechOps</td>
-                <td class="py-3 px-6">TechOps, READ, WRITE</td>
-                <td class="py-3 px-6"><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="py-3 px-6 flex gap-4 items-center">
+                  <input type="checkbox" class="transform scale-150 cursor-pointer " />
+                  <div class="">
+                  <h1>  Sanjay Vyas</h1>
+                  <p class="text-gray-500">sanjay@gmail.com</p>
+                  </div>
+                </td>
+                <td class="py-3 px-6 "><button class="bg-gray-100 px-4 py-2 rounded-full">#28697824gh5g8</button></td>
+                <td class="py-3 px-6">DevOps</td>
+                <td class="py-3 px-6">DevOps, <br> <p class="text-gray-500">Full Access</p></td>
+                <td class="py-3 px-6"><i class="fa-solid fa-ellipsis-vertical text-gray-500 cursor-pointer"></i></td>
               </tr>
               <!-- Add More Rows as Needed -->
             </tbody>
@@ -119,16 +177,20 @@
 
         <!-- Pagination -->
         <div class="flex justify-between items-center mt-4">
-          <button class="px-4 py-2 bg-white rounded md hover:bg-gray-300">
+          <button class="px-4 py-2 bg-white rounded md hover:bg-gray-300 shadow-md">
             <i class="fa-solid fa-backward-step p-2"></i>
             Previous
           </button>
-          <div class="flex items-center space-x-1">
-            <button class="px-3 py-1 bg-gray-200 rounded-md">1</button>
+          <div class="flex items-center space-x-1 ">
+            <button class="px-3 py-1 bg-gray-200 rounded-md shadow-md">1</button>
             <button class="px-3 py-1">2</button>
             <button class="px-3 py-1">3</button>
+            <button class="px-3 py-1">....</button>
+            <button class="px-3 py-1">4</button>
+            <button class="px-3 py-1">5</button>
+            <button class="px-3 py-1">6</button>
           </div>
-          <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300">
+          <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 shadow-md">
             Next
             <i class="fa-solid fa-forward-step px-2"></i>
           </button>
@@ -136,19 +198,66 @@
       </main>
       <!-- Chat Icon and Chat Bot -->
       <div id="chat-bot"
-        class="hidden fixed bottom-20 right-4 bg-white border border-gray-300 shadow-lg rounded-lg w-96 h-[80vh] flex flex-col">
-        <div class="p-4 flex justify-between items-center border-b">
-          <h3 class="text-lg font-semibold">Chat</h3>
-          <button id="close-chat" class="text-gray-500 hover:text-gray-800">✖</button>
+      class="hidden fixed bottom-20 right-4 bg-white border border-gray-300 shadow-lg rounded-lg w-96 min-h-[80vh] flex flex-col">
+      <div class="p-4 flex justify-between items-center border-b">
+        <i class="fa-solid fa-bars"></i>
+        <div class="flex px-2">
+          <i class="fa-solid fa-robot text-2xl px-2"></i>
+          <h3 class="text-lg font-semibold">Yaksha.ai</h3>
         </div>
-        <div id="bot-content" class="p-4 flex-1 overflow-y-auto">
-          <p class="text-gray-600">Hi! How can I assist you today?</p>
+        <button id="close-chat" class="text-gray-500 hover:text-gray-800">✖</button>
+      </div>
+      <div id="bot-content" class="p-4 flex-1 space-y-4 overflow-y-auto max-h-[calc(100vh-150px)]">
+        <!-- Example Message (User to Bot) -->
+        <div class="flex justify-end">
+          <div class="text-white bg-black p-3 rounded-lg max-w-xs w-60">
+            The advantages of Artificial Intelligence?
+          </div>
         </div>
-        <div class="p-2 border-t flex justify-center items-center gap-2">
-          <input type="text" placeholder="Type a message..." class="w-full px-4 py-2 border rounded-md" />
-          <i class="fa-solid fa-paper-plane px-4 py-3 border rounded-md"></i>
+      
+        <!-- Bot Response -->
+        <div class="flex gap-2">
+          <div class="h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-robot text-xl text-gray-800"></i>
+          </div>
+          
+          <div class="bg-gray-100 text-gray-400 p-3 rounded-lg max-w-xs w-60">
+            Artificial Intelligence (AI) offers numerous advantages and has the potential to revolutionize various aspects of our lives. Here are some key advantages of AI:
+            <ol class="list-decimal pl-5">
+              <li>Automation: AI can automate repetitive and mundane tasks, saving time and effort for humans.</li>
+              <li>Decision-making: AI systems can analyze vast amounts of data and make informed decisions.</li>
+            </ol>
+          </div>
+        </div>
+
+          <!-- Example Message (User to Bot) -->
+          <div class="flex justify-end">
+            <div class="text-white bg-black p-3 rounded-lg max-w-xs w-60">
+              The advantages of Artificial Intelligence?
+            </div>
+          </div>
+
+           <!-- Bot Response -->
+        <div class="flex gap-2">
+          <div class="h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-robot text-xl text-gray-800"></i>
+          </div>
+          
+          <div class="bg-gray-100 text-gray-400 p-3 rounded-lg max-w-xs w-60">
+            Artificial Intelligence (AI) offers numerous advantages and has the potential to revolutionize various aspects of our lives. Here are some key advantages of AI:
+            <ol class="list-decimal pl-5">
+              <li>Automation: AI can automate repetitive and mundane tasks, saving time and effort for humans.</li>
+              <li>Decision-making: AI systems can analyze vast amounts of data and make informed decisions.</li>
+            </ol>
+          </div>
         </div>
       </div>
+      
+      <div class="p-2 border-t flex justify-center items-center gap-2 mt-4 py-4">
+        <input type="text" placeholder="Type a message..." class="w-full px-4 py-2 border-2  rounded-md focus:outline-none " />
+        <i class="fa-solid fa-paper-plane px-4 py-3 border rounded-md border-2 "></i>
+      </div>
+    </div>
 
       <button id="chat-button"
         class="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600">
