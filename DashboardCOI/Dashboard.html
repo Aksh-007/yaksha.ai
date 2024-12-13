@@ -1,299 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    rel="stylesheet"
-  />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="Dashboard.css">
-    <script>
-      function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        sidebar.classList.toggle("hidden");
-      }
-    </script>
-  </head>
-  <body class="font-sans bg-gray-100">
-    <!-- Sidebar -->
-    <div class="flex h-screen">
-      <div
-        id="sidebar"
-        class="w-64 bg-white text-black border-r border-gray-300 p-5 space-y-4 hidden md:block"
-      >
-        <div
-          class="text-center text-xl font-bold flex justify-between items-center"
-        >
-          <h1>Yaksha.ai</h1>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("hidden");
+    }
+  </script>
+</head>
+
+<body class="font-sans bg-gray-100">
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <aside class="w-60 bg-white border-r border-gray-300">
+      <div class="p-6">
+        <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+      </div>
+      <nav class="mt-6">
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-house px-2"></i>
+            <p>Home</p>
+          </div>
+
+        </a>
+        <a href="#"
+          class="block py-3 px-3 bg-gray-100 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gauge-high px-2"></i>
+            <p>COI</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-gear px-2"></i>
+            <p>Services</p>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-chart-line px-2"></i>
+            <p>Reports</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-brands fa-unity px-2"></i>
+            <p>3P Implementation</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+        <a href="#"
+          class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+          <div class="flex items-center ">
+            <i class="fa-solid fa-circle-plus px-2"></i>
+            <p>Other Services</p>
+          </div>
+          <!-- <i class="fa-solid fa-angle-right"></i> -->
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col relative">
+      <!-- Top Bar -->
+      <div class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300">
+        <div class="flex items-center space-x-4">
+          <!-- Toggle Sidebar Button for Mobile and Desktop -->
           <button class="text-black md:hidden" onclick="toggleSidebar()">
             ☰
           </button>
         </div>
-
-        <div class="mt-5 space-y-4">
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >Home</a
-          >
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >COI</a
-          >
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >Services</a
-          >
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >Reports</a
-          >
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >3P Implementation</a
-          >
-          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-            >Other Services</a
-          >
+        <div class="flex items-center space-x-8">
+          <input type="text" placeholder="Search..." class="border-2 p-2 rounded-md w-64 focus:outline-none" />
+          <i class="fa-solid fa-robot text-2xl"></i>
+          <i class="fa-regular fa-bell text-2xl"></i>
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
         </div>
       </div>
-
-      <!-- Main Content -->
-      <div class="flex-1 flex flex-col">
-        <!-- Top Bar -->
-        <div
-          class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300"
-        >
+      <!-- Dashboard Content -->
+      <div class="main-div overflow-auto py-4">
+        <div class="flex justify-between items-center mt-2 h-12 px-6">
+          <div class="">
+            <h1 class="text-2xl">COI</h1>
+          </div>
           <div class="flex items-center space-x-4">
-            <!-- Toggle Sidebar Button for Mobile and Desktop -->
-            <button class="text-black md:hidden" onclick="toggleSidebar()">
-              ☰
+            <!-- Dropdown -->
+            <div class="relative">
+              <button id="dropdownButton" class="bg-gray-200 text-black px-4 py-2 rounded-md">
+                Quarterly
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="dropdownMenu"
+                class="absolute hidden bg-white border border-gray-300 rounded-md mt-2 w-full shadow-lg">
+                <ul>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-black">Q1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-black">Q2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-black">Q3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-black">Q4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              Generate New COI
             </button>
           </div>
-          <div class="flex items-center space-x-4">
-            <input
-              type="text"
-              placeholder="Search..."
-              class="border-2 p-2 rounded-md w-64"
-            />
-            <img
-              src="https://via.placeholder.com/40"
-              alt="User Avatar"
-              class="w-10 h-10 rounded-full"
-            />
+        </div>
+
+        <!-- Matrix section -->
+        <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Metrics Section -->
+          <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300">
+            <div class="text-xl font-semibold mb-4  flex justify-between">
+              <h1>
+
+                Compliance Score
+              </h1>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                <span class="text-3xl font-semibold text-blue-600">75%</span>
+              </div>
+              <div class="text-gray-500">Avg. score</div>
+            </div>
+            <div class="mt-4 text-gray-600">SOC-2</div>
+          </div>
+
+          <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300">
+            <div class="text-xl font-semibold mb-4  flex justify-between">
+              <h1>
+                Threat Model
+              </h1>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                <span class="text-3xl font-semibold text-purple-600">83%</span>
+              </div>
+              <div class="text-gray-500">Confidentiality</div>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300">
+            <div class="text-xl font-semibold mb-4  flex justify-between">
+              <h1>
+                Risk Impact
+              </h1>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+
+            <div class="w-full bg-gray-200 rounded-full">
+              <div class="bg-red-400 text-xs leading-none py-1 text-center text-white" style="width: 12%">
+                12%
+              </div>
+            </div>
+            <div class="mt-2 text-gray-600">Minor</div>
+          </div>
+
+          <!-- Graphs Section -->
+          <div class="bg-white shadow-md p-6 rounded-lg col-span-2 border border-gray-300">
+            <div class="text-xl font-semibold mb-4">
+              <div class="text-xl font-semibold mb-4  flex justify-between">
+                <h1>
+                  Compliance State Overtime
+                </h1>
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+
+            </div>
+            <div class="w-full h-48 bg-gray-200 rounded-lg"></div>
+          </div>
+
+          <div class="bg-white shadow-md p-6 rounded-lg border border-gray-300">
+            <div class="text-xl font-semibold mb-4  flex justify-between">
+              <h1>
+                Tickets
+              </h1>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+
+            <div class="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center">
+              <span class="text-3xl font-semibold text-red-600">43</span>
+            </div>
+            <div class="mt-4 text-gray-600">Open Tickets: 11 (26.4%)</div>
+            <div class="mt-2 text-gray-600">Closed Tickets: 32 (73.6%)</div>
           </div>
         </div>
-        <!-- Dashboard Content -->
-        <div class="main-div overflow-auto">
-          <div class="flex justify-between items-center mt-2 h-12 px-6">
-            <div class="">
-              <h1 class="text-2xl">COI</h1>
-            </div>
-            <div class="flex items-center space-x-4">
-              <!-- Dropdown -->
-              <div class="relative">
-                <button
-                  id="dropdownButton"
-                  class="bg-gray-200 text-black px-4 py-2 rounded-md"
-                >
-                  Quarterly
-                </button>
-                <div
-                  id="dropdownMenu"
-                  class="absolute hidden bg-white border border-gray-300 rounded-md mt-2 w-full shadow-lg"
-                >
-                  <ul>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-black">Q1</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-black">Q2</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-black">Q3</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-black">Q4</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
 
-              <!-- Button -->
-              <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                Generate New COI
-              </button>
-            </div>
-          </div>
-
-          <!-- Matrix section -->
-          <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Metrics Section -->
-            <div
-              class="bg-white shadow-md p-6 rounded-lg border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4  flex justify-between">
+        <!-- Table Section -->
+        <div class="p-6">
+          <div class="p-6 bg-white shadow-md rounded-lg border border-gray-300">
+            <div class="text-xl font-semibold mb-4">
+              <div class="text-xl font-semibold mb-4  flex justify-between items-center">
                 <h1>
-
-                  Compliance Score
+                  Open Threats (By Severity)
                 </h1>
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-              <div class="flex justify-between items-center">
-                <div
-                  class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center"
-                >
-                  <span class="text-3xl font-semibold text-blue-600">75%</span>
-                </div>
-                <div class="text-gray-500">Avg. score</div>
-              </div>
-              <div class="mt-4 text-gray-600">SOC-2</div>
-            </div>
+                <div class="">
 
-            <div
-              class="bg-white shadow-md p-6 rounded-lg border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4  flex justify-between">
-                <h1>
-                  Threat Model
-                </h1>
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-              <div class="flex justify-between items-center">
-                <div
-                  class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center"
-                >
-                  <span class="text-3xl font-semibold text-purple-600"
-                    >83%</span
-                  >
-                </div>
-                <div class="text-gray-500">Confidentiality</div>
-              </div>
-            </div>
+                  <button class="py-2 px-4 text-sm rounded-lg mr-2 drop-shadow-2xl shadow-lg">
+                    View all
+                  </button>
 
-            <div
-              class="bg-white shadow-md p-6 rounded-lg border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4  flex justify-between">
-                <h1>
-                  Risk Impact
-                </h1>
-                <i class="fa-solid fa-ellipsis"></i>
-              </div>
-
-              <div class="w-full bg-gray-200 rounded-full">
-                <div
-                  class="bg-red-400 text-xs leading-none py-1 text-center text-white"
-                  style="width: 12%"
-                >
-                  12%
-                </div>
-              </div>
-              <div class="mt-2 text-gray-600">Minor</div>
-            </div>
-
-            <!-- Graphs Section -->
-            <div
-              class="bg-white shadow-md p-6 rounded-lg col-span-2 border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4">
-                <div class="text-xl font-semibold mb-4  flex justify-between">
-                  <h1>
-                    Compliance State Overtime
-                  </h1>
                   <i class="fa-solid fa-ellipsis"></i>
                 </div>
-  
-              </div>
-              <div class="w-full h-48 bg-gray-200 rounded-lg"></div>
-            </div>
-
-            <div
-              class="bg-white shadow-md p-6 rounded-lg border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4  flex justify-between">
-                <h1>
-                  Tickets
-                </h1>
-                <i class="fa-solid fa-ellipsis"></i>
               </div>
 
-              <div
-                class="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center"
-              >
-                <span class="text-3xl font-semibold text-red-600">43</span>
-              </div>
-              <div class="mt-4 text-gray-600">Open Tickets: 11 (26.4%)</div>
-              <div class="mt-2 text-gray-600">Closed Tickets: 32 (73.6%)</div>
             </div>
-          </div>
+            <table class="w-full table-auto">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="px-4 py-2 text-left">No <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i>
+                  </th>
+                  <th class="px-4 py-2 text-left">ID <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">Severity <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">Compliance <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">Control ID <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">Description <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">How To Fix? <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                  <th class="px-4 py-2 text-left">Ticket ID <i
+                      class="fa-solid fa-arrow-right-arrow-left btn-rotate text-gray-500"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="px-4 py-2">#001</td>
+                  <td class="px-4 py-2">PCL SOC</td>
+                  <td class="px-4 py-2 text-red-500">
+                    <div class=" flex items-center">
+                      <div class="flex items-center gap-2 p-2 rounded-lg  drop-shadow-2xl shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                        <p>High</p>
+                      </div>
+                    </div>
 
-          <!-- Table Section -->
-          <div class="p-6">
-            <div
-              class="p-6 bg-white shadow-md rounded-lg border border-gray-300"
-            >
-              <div class="text-xl font-semibold mb-4">
-                <div class="text-xl font-semibold mb-4  flex justify-between">
-                  <h1>
-                    Open Threats (By Severity)
-                  </h1>
-                  <i class="fa-solid fa-ellipsis"></i>
-                </div>
-  
-              </div>
-              <table class="w-full table-auto">
-                <thead>
-                  <tr class="bg-gray-100">
-                    <th class="px-4 py-2 text-left">No</th>
-                    <th class="px-4 py-2 text-left">ID</th>
-                    <th class="px-4 py-2 text-left">Severity</th>
-                    <th class="px-4 py-2 text-left">Compliance</th>
-                    <th class="px-4 py-2 text-left">Control ID</th>
-                    <th class="px-4 py-2 text-left">Description</th>
-                    <th class="px-4 py-2 text-left">How To Fix?</th>
-                    <th class="px-4 py-2 text-left">Ticket ID</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-b">
-                    <td class="px-4 py-2">#001</td>
-                    <td class="px-4 py-2">PCL SOC</td>
-                    <td class="px-4 py-2 text-red-500">High</td>
-                    <td class="px-4 py-2">SOC-2</td>
-                    <td class="px-4 py-2">AC-2 (2)</td>
-                    <td class="px-4 py-2">N/A</td>
-                    <td class="px-4 py-2">N/A</td>
-                    <td class="px-4 py-2">#29737</td>
-                  </tr>
-                  <!-- Additional rows here -->
-                </tbody>
-              </table>
-            </div>
+                  </td>
+                  <td class="px-4 py-2">SOC-2</td>
+                  <td class="px-4 py-2">AC-2 (2)</td>
+                  <td class="px-4 py-2">N/A</td>
+                  <td class="px-4 py-2">N/A</td>
+                  <td class="px-4 py-2">#29737</td>
+                </tr>
+                <tr class="border-b">
+                  <td class="px-4 py-2">#001</td>
+                  <td class="px-4 py-2">PCL SOC</td>
+                  <td class="px-4 py-2 text-red-500">
+                    <div class=" flex items-center">
+                      <div class="flex items-center gap-2 p-2 rounded-lg  drop-shadow-2xl shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        <p>Severe</p>
+                      </div>
+                    </div>
+
+                  </td>
+                  <td class="px-4 py-2">SOC-2</td>
+                  <td class="px-4 py-2">AC-2 (2)</td>
+                  <td class="px-4 py-2">N/A</td>
+                  <td class="px-4 py-2">N/A</td>
+                  <td class="px-4 py-2">#29737</td>
+                </tr>
+
+                <!-- Additional rows here -->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
+      <!-- Chat Icon and Chat Bot -->
+      <div id="chat-bot"
+        class="hidden fixed bottom-20 right-4 bg-white border border-gray-300 shadow-lg rounded-lg w-96 min-h-[80vh] flex flex-col">
+        <div class="p-4 flex justify-between items-center border-b">
+          <i class="fa-solid fa-bars"></i>
+          <div class="flex px-2">
+            <i class="fa-solid fa-robot text-2xl px-2"></i>
+            <h3 class="text-lg font-semibold">Yaksha.ai</h3>
+          </div>
+          <button id="close-chat" class="text-gray-500 hover:text-gray-800">✖</button>
+        </div>
+        <div id="bot-content" class="p-4 flex-1 space-y-4 overflow-y-auto max-h-[calc(100vh-150px)]">
+          <!-- Example Message (User to Bot) -->
+          <div class="flex justify-end">
+            <div class="text-white bg-black p-3 rounded-lg max-w-xs w-60">
+              The advantages of Artificial Intelligence?
+            </div>
+          </div>
+        
+          <!-- Bot Response -->
+          <div class="flex gap-2">
+            <div class="h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center">
+              <i class="fa-solid fa-robot text-xl text-gray-800"></i>
+            </div>
+            
+            <div class="bg-gray-100 text-gray-400 p-3 rounded-lg max-w-xs w-60">
+              Artificial Intelligence (AI) offers numerous advantages and has the potential to revolutionize various aspects of our lives. Here are some key advantages of AI:
+              <ol class="list-decimal pl-5">
+                <li>Automation: AI can automate repetitive and mundane tasks, saving time and effort for humans.</li>
+                <li>Decision-making: AI systems can analyze vast amounts of data and make informed decisions.</li>
+              </ol>
+            </div>
+          </div>
+
+            <!-- Example Message (User to Bot) -->
+            <div class="flex justify-end">
+              <div class="text-white bg-black p-3 rounded-lg max-w-xs w-60">
+                The advantages of Artificial Intelligence?
+              </div>
+            </div>
+
+             <!-- Bot Response -->
+          <div class="flex gap-2">
+            <div class="h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center">
+              <i class="fa-solid fa-robot text-xl text-gray-800"></i>
+            </div>
+            
+            <div class="bg-gray-100 text-gray-400 p-3 rounded-lg max-w-xs w-60">
+              Artificial Intelligence (AI) offers numerous advantages and has the potential to revolutionize various aspects of our lives. Here are some key advantages of AI:
+              <ol class="list-decimal pl-5">
+                <li>Automation: AI can automate repetitive and mundane tasks, saving time and effort for humans.</li>
+                <li>Decision-making: AI systems can analyze vast amounts of data and make informed decisions.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        <div class="p-2 border-t flex justify-center items-center gap-2 mt-4 py-4">
+          <input type="text" placeholder="Type a message..." class="w-full px-4 py-2 border-2  rounded-md focus:outline-none " />
+          <i class="fa-solid fa-paper-plane px-4 py-3 border rounded-md border-2 "></i>
+        </div>
+      </div>
+
+      <button id="chat-button"
+        class="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600">
+        💬
+      </button>
     </div>
-    <script>
-      // Get the dropdown button and menu
-      const dropdownButton = document.getElementById("dropdownButton");
-      const dropdownMenu = document.getElementById("dropdownMenu");
+  </div>
+  <script>
+    // Get the dropdown button and menu
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
 
-      // Toggle the visibility of the dropdown when the button is clicked
-      dropdownButton.addEventListener("click", function () {
-        dropdownMenu.classList.toggle("hidden");
-      });
+    // Toggle the visibility of the dropdown when the button is clicked
+    dropdownButton.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
 
-      // Optional: Close the dropdown if clicking outside of it
-      document.addEventListener("click", function (event) {
-        if (
-          !dropdownButton.contains(event.target) &&
-          !dropdownMenu.contains(event.target)
-        ) {
-          dropdownMenu.classList.add("hidden");
-        }
-      });
-    </script>
-  </body>
+    // Optional: Close the dropdown if clicking outside of it
+    document.addEventListener("click", function (event) {
+      if (
+        !dropdownButton.contains(event.target) &&
+        !dropdownMenu.contains(event.target)
+      ) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+
+    // Chatbot toggle function
+    function toggleChatBot() {
+      const chatBot = document.getElementById("chat-bot");
+      const chatButton = document.getElementById("chat-button");
+
+      // Toggle the 'hidden' class to show or hide the chatbot
+      chatBot.classList.toggle("hidden");
+
+    }
+
+    // Event listeners for toggling
+    document.getElementById("chat-button").addEventListener("click", toggleChatBot);
+    document.getElementById("close-chat").addEventListener("click", toggleChatBot);
+  </script>
+</body>
+
 </html>
