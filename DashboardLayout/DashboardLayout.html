@@ -1,145 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-    
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Charts 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+        
+    </head>
 
-<body class="bg-gray-100 font-sans">
-    <div class="flex h-screen">
-        <!-- Sidebar -->
-        <aside class="w-60 bg-white border-r border-gray-300">
-            <div class="p-6">
-                <h1 class="text-2xl font-bold">Yaksha.ai</h1>
-            </div>
-            <nav class="mt-6 space-y-2">
-                <!-- Home with Submenus -->
-                <div>
-                    <button onclick="toggleMenu('home-menu')"
-                        class="block w-full text-left py-3 px-3 bg-gray-300 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                        <div class="flex items-center">
-                            <i class="fa-solid fa-house px-2"></i>
-                            <p>Home</p>
-                        </div>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                    <!-- First Level -->
-                    <div id="home-menu" class="hidden pl-6">
-                        <button onclick="toggleMenu('dashboard-menu')"
-                            class="block w-full text-left py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+    <body class="bg-gray-100 font-sans">
+        <div class="flex h-screen">
+            <!-- Sidebar -->
+            <aside class="w-60 bg-white border-r border-gray-300">
+                <div class="p-6">
+                    <h1 class="text-2xl font-bold">Yaksha.ai</h1>
+                </div>
+                <nav class="mt-6 space-y-2">
+                    <!-- Home with Submenus -->
+                    <div>
+                        <button onclick="toggleMenu('home-menu')"
+                            class="block w-full text-left py-3 px-3 bg-gray-300 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
                             <div class="flex items-center">
-                                <i class="fa-solid fa-chart-line px-2"></i>
-                                <p>Dashboard</p>
+                                <i class="fa-solid fa-house px-2"></i>
+                                <p>Home</p>
                             </div>
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
-                        <!-- Second Level -->
-                        <div id="dashboard-menu" class="hidden pl-6">
-                            <button onclick="toggleMenu('analytics-menu')"
+                        <!-- First Level -->
+                        <div id="home-menu" class="hidden pl-6">
+                            <button onclick="toggleMenu('dashboard-menu')"
                                 class="block w-full text-left py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
                                 <div class="flex items-center">
-                                    <i class="fa-solid fa-chart-area px-2"></i>
-                                    <p>Analytics</p>
+                                    <i class="fa-solid fa-chart-line px-2"></i>
+                                    <p>Dashboard</p>
                                 </div>
                                 <i class="fa-solid fa-angle-right"></i>
                             </button>
-                            <!-- Third Level -->
-                            <div id="analytics-menu" class="hidden pl-6">
-                                <a href="#" class="block py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black">
-                                    <i class="fa-solid fa-bar-chart px-2"></i>
-                                    Reports
-                                </a>
-                                <a href="#" class="block py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black">
-                                    <i class="fa-solid fa-chart-pie px-2"></i>
-                                    Metrics
-                                </a>
+                            <!-- Second Level -->
+                            <div id="dashboard-menu" class="hidden pl-6">
+                                <button onclick="toggleMenu('analytics-menu')"
+                                    class="block w-full text-left py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <i class="fa-solid fa-chart-area px-2"></i>
+                                        <p>Analytics</p>
+                                    </div>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                                <!-- Third Level -->
+                                <div id="analytics-menu" class="hidden pl-6">
+                                    <a href="#" class="block py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black">
+                                        <i class="fa-solid fa-bar-chart px-2"></i>
+                                        Reports
+                                    </a>
+                                    <a href="#" class="block py-2 px-3 text-gray-600 hover:bg-gray-100 hover:text-black">
+                                        <i class="fa-solid fa-chart-pie px-2"></i>
+                                        Metrics
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Other Menu Items -->
+                    <!-- Other Menu Items -->
+                    <a href="#"
+                    class="block py-3 px-3  hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                    <div class="flex items-center ">
+                    <i class="fa-solid fa-gauge-high px-2"></i>
+                    <p>COI</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
                 <a href="#"
-                class="block py-3 px-3  hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                <div class="flex items-center ">
-                  <i class="fa-solid fa-gauge-high px-2"></i>
-                  <p>COI</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-              <a href="#"
-                class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                <div class="flex items-center ">
-                  <i class="fa-solid fa-gear px-2"></i>
-                  <p>Services</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-              <a href="#"
-                class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                <div class="flex items-center ">
-                  <i class="fa-solid fa-chart-line px-2"></i>
-                  <p>Reports</p>
-                </div>
-                <!-- <i class="fa-solid fa-angle-right"></i> -->
-              </a>
-              <a href="#"
-                class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                <div class="flex items-center ">
-                  <i class="fa-brands fa-unity px-2"></i>
-                  <p>3P Implementation</p>
-                </div>
-                <!-- <i class="fa-solid fa-angle-right"></i> -->
-              </a>
-              <a href="#"
-                class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
-                <div class="flex items-center ">
-                  <i class="fa-solid fa-circle-plus px-2"></i>
-                  <p>Other Services</p>
-                </div>
-                <!-- <i class="fa-solid fa-angle-right"></i> -->
-              </a>
-            </nav>
-          </aside>
+                    class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                    <div class="flex items-center ">
+                    <i class="fa-solid fa-gear px-2"></i>
+                    <p>Services</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="#"
+                    class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                    <div class="flex items-center ">
+                    <i class="fa-solid fa-chart-line px-2"></i>
+                    <p>Reports</p>
+                    </div>
+                    <!-- <i class="fa-solid fa-angle-right"></i> -->
+                </a>
+                <a href="#"
+                    class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                    <div class="flex items-center ">
+                    <i class="fa-brands fa-unity px-2"></i>
+                    <p>3P Implementation</p>
+                    </div>
+                    <!-- <i class="fa-solid fa-angle-right"></i> -->
+                </a>
+                <a href="#"
+                    class="block py-3 px-3 text-gray-600 hover:bg-gray-100 hover:text-black flex justify-between items-center">
+                    <div class="flex items-center ">
+                    <i class="fa-solid fa-circle-plus px-2"></i>
+                    <p>Other Services</p>
+                    </div>
+                    <!-- <i class="fa-solid fa-angle-right"></i> -->
+                </a>
+                </nav>
+            </aside>
 
-        <!-- Main Content -->
-        <div class="flex-1">
-            <!-- Header -->
-            <div class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300">
-                <div class="flex items-center space-x-4">
-                    <!-- Toggle Sidebar Button for Mobile and Desktop -->
-                    <button class="text-black md:hidden" onclick="toggleSidebar()">
-                        ☰
-                    </button>
+            <!-- Main Content -->
+            <div class="flex-1">
+                <!-- Header -->
+                <div class="bg-white shadow-md p-4 flex justify-between items-center border-b border-gray-300">
+                    <div class="flex items-center space-x-4">
+                        <!-- Toggle Sidebar Button for Mobile and Desktop -->
+                        <button class="text-black md:hidden" onclick="toggleSidebar()">
+                            ☰
+                        </button>
+                    </div>
+                    <div class="flex items-center space-x-8">
+                        <input type="text" placeholder="Search..."
+                            class="border-2 p-2 rounded-md w-64 focus:outline-none" />
+                        <i class="fa-solid fa-robot text-2xl"></i>
+                        <i class="fa-regular fa-bell text-2xl"></i>
+                        <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
+                    </div>
                 </div>
-                <div class="flex items-center space-x-8">
-                    <input type="text" placeholder="Search..."
-                        class="border-2 p-2 rounded-md w-64 focus:outline-none" />
-                    <i class="fa-solid fa-robot text-2xl"></i>
-                    <i class="fa-regular fa-bell text-2xl"></i>
-                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full" />
-                </div>
+
+                <!-- Profile Section -->
+                <main class="p-6">
+                    <h1>Welcome to Yaksha.ai Dashboard</h1>
+                </main>
             </div>
-
-            <!-- Profile Section -->
-            <main class="p-6">
-                <h1>Welcome to Yaksha.ai Dashboard</h1>
-            </main>
         </div>
-    </div>
-</body>
-<script>
-    function toggleMenu(id) {
-        const menu = document.getElementById(id);
-        menu.classList.toggle("hidden");
-    }
-</script>
-</html>
+    </body>
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            menu.classList.toggle("hidden");
+        }
+    </script>
+    </html>
 
 
 
